@@ -3,11 +3,11 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: <!!CHANGE_ME!!>
+  name: iconoflix
 spec:
   containers:
-    - name: <!!CHANGE_ME!!>
-      image: <!!CHANGE_ME!!>
-      imagePullPolicy: <!!CHANGE_ME!!>
+    - name: iconoflix
+      image: quay.io/imhotepio/iconoflix:mem
+      imagePullPolicy: Always
       ports:
-        - containerPort: <!!CHANGE_ME!!>
+        - containerPort: 4000
